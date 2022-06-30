@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 export const MenuContainer = styled.div`
+    padding: 0 25px 0 25px;
+
     svg {
         height: 30px;
         width: 30px;
