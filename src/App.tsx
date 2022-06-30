@@ -1,21 +1,26 @@
 import { Routes, Route } from 'react-router-dom';
-import './App.scss';
 
 // Pages
 import Home from './pages/Home';
 
 // Components
-import Container from './theme/styles/Container';
-import Menu from './components/Menu/Menu';
+import {Container, Content} from './theme/styles/Containers';
+import Sidebar from './components/Sidebar/Sidebar';
+import Media from './components/Media/Media';
 
 const App = () => {
     return (
-        <Container>
-            <Menu />
-            <Routes>
-                <Route path='/' element={<Home />} />
-            </Routes>
-        </Container>
+        <div>
+            <Container>
+                <Sidebar />
+                <Content>
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                    </Routes>
+                </Content>
+            </Container>
+            <Media />
+        </div>
     );
 }
 

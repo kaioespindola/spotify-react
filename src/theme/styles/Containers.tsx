@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Breakpoints from '../variables/Breakpoints';
 
-const Container = styled.div`
+export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr;
 
@@ -9,5 +9,10 @@ const Container = styled.div`
     grid-template-columns: 250px 1fr;
   }
 `;
+
+export const Content = styled.div`
+    width: auto;
+    height: calc(100vh - 90px);
+`
 
 export default Container;

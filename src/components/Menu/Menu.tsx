@@ -1,31 +1,38 @@
-import styled from "styled-components";
-import Breakpoints from '../../theme/variables/Breakpoints';
-import logo from '../../assets/logo.svg';
-
-const MenuContainer = styled.div`
-
-    @media (min-width: ${Breakpoints.md}) {
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        height: 100vh;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        background-color: #000000;
-        padding: 24px;
-    }
-
-    img {
-        max-width: 129px;
-    }
-`;
+import {
+    MenuContainer,
+    MenuList,
+    MenuItem,
+    CreatePlaylistIcon,
+    LikedSongsIcon
+} from './Styles'
+import { AiOutlineHome, AiOutlineSearch, AiFillHeart } from 'react-icons/ai'
+import { VscLibrary } from 'react-icons/vsc'
 
 const Menu = () => {
     return(
         <MenuContainer>
-            <img src={logo} alt="Spotify Logo" loading="lazy"/>
-            <p>Menu aqui? hehe</p>
+            <MenuList>
+                <MenuItem>
+                    <AiOutlineHome /> Home
+                </MenuItem>
+                <MenuItem>
+                    <AiOutlineSearch /> Search
+                </MenuItem>
+                <MenuItem>
+                    <VscLibrary /> Your Library
+                </MenuItem>
+            </MenuList>
+
+            <MenuList>
+                <MenuItem>
+                    <CreatePlaylistIcon /> Create Playlist
+                </MenuItem>
+                <MenuItem>
+                    <LikedSongsIcon>
+                        <AiFillHeart />
+                    </LikedSongsIcon> Liked Songs
+                </MenuItem>
+            </MenuList>
         </MenuContainer>
     )
 }

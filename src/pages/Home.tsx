@@ -22,7 +22,7 @@ const Home = () => {
         }
     }, [inputValue])
 
-    const handleInputValue = debounce(e => setInputValue(e.target.value), 1000);
+    const handleInputValue = debounce(e => setInputValue(e.target.value), 1000)
 
     return(
         <div>
