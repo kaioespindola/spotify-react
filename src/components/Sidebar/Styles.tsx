@@ -13,10 +13,16 @@ export const SidebarContainer = styled.div`
         position: sticky;
         top: 0;
         background-color: ${Colors.black};
-        padding: 25px;
+
+        hr {
+            margin: 0 auto;
+            width: 82.5%;
+            opacity: 0.15;
+        }
     }
 `
 
 export const SpotifyLogo = styled.img`
     max-width: 130px;
+    margin: 25px 0 0 25px;
 `
