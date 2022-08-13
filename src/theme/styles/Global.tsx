@@ -30,7 +30,7 @@ export default createGlobalStyle`
     }
 
     *::-webkit-scrollbar-thumb {
-        background-color: ${Colors.primaryGray};
+        background-color: ${Colors.secondaryGray};
     }
 
 `

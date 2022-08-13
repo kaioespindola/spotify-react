@@ -2,7 +2,7 @@ import { useState } from "react";
 import { PlaylistsContainer, PlaylistItem } from './Styles';
 
 const PlaylistSidebar = () => {
-    const inistalState = [
+    const inistalState: Array<string> = [
         'Moody Mix',
         'Chill Mix',
         'Release Radar',

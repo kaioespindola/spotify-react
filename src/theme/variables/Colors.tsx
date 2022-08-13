@@ -1,9 +1,11 @@
 const Colors = {
     black: '#000000',
     primaryDark: '#121212',
+    primaryGreen: '#1ed760',
+    primaryGray: '#b3b3b3',
+    primaryLight: '#ffffff',
     secondaryDark: '#181818',
-    primaryGray: '#4D4D4D',
-    primaryLight: '#ffffff'
+    secondaryGray: '#555555',
 }
 
 export default Colors;
