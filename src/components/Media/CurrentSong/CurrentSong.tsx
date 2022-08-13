@@ -3,18 +3,23 @@ import {
     AlbumArt,
     ArtistSong 
 } from './Styles';
-import { BiHeart } from 'react-icons/bi'
+import { BiHeart } from 'react-icons/bi';
+import { PlayingContext } from '../../../context/playing-context';
+import { useContext } from 'react';
 
 const CurrentSong = () => {
+
+    const { title, artist, cover } = useContext(PlayingContext);
+ 
     return(
         <Container>
             <AlbumArt
-                src='https://i.scdn.co/image/ab67616d0000b2737f9d1aa43ea7a582519311d2'
-                alt='Album Art - Visalia'
+                src={cover}
+                alt={artist}
             />
             <ArtistSong>
-                <p>INV018: BAKA (Feat. MAGIC OF LIFE)</p>
-                <p>Fresno, MAGIC OF LIFE</p>
+                <p>{title}</p>
+                <p>{artist}</p>
             </ArtistSong>
             <BiHeart />
         </Container>

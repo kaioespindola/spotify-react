@@ -1,12 +1,14 @@
 import {
     PlayerContainer,
     Controls,
-    ProgressBar
+    ProgressBar,
+    Timestamp
 } from './Styles';
 
 import { BsPlayCircleFill } from 'react-icons/bs';
-import { IoIosSkipBackward, IoIosSkipForward } from 'react-icons/io';
-import { BiShuffle, BiRepeat } from 'react-icons/bi';
+import { IoIosSkipBackward, IoIosPlayCircle, IoIosSkipForward } from 'react-icons/io';
+import { BiRepeat, BiShuffle } from 'react-icons/bi';
+
 
 
 const Player = () => {
@@ -15,12 +17,14 @@ const Player = () => {
             <Controls>
                 <BiShuffle />
                 <IoIosSkipBackward />
-                <BsPlayCircleFill />
+                <IoIosPlayCircle />
                 <IoIosSkipForward />
                 <BiRepeat />
             </Controls>
             <ProgressBar>
-
+                <div>0:00</div>
+                <Timestamp />
+                <div>3:12</div>
             </ProgressBar>
         </PlayerContainer>
     )

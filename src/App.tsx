@@ -8,6 +8,9 @@ import { Container, Content } from './theme/styles/Containers';
 import Sidebar from './components/Sidebar/Sidebar';
 import Media from './components/Media/Media';
 
+// Context
+import { PlayingContextProvider } from './context/playing-context';
+
 const App = () => {
     return (
         <>
@@ -19,7 +22,9 @@ const App = () => {
                     </Routes>
                 </Content>
             </Container>
-            <Media />
+            <PlayingContextProvider>
+                <Media />
+            </PlayingContextProvider>
         </>
     );
 }
