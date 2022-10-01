@@ -19,7 +19,7 @@ export default createGlobalStyle`
     body {
         background-color: #121212;
         font-family: 'Montserrat', sans-serif;
-        color: #ffffff;
+        color: ${Colors.primaryLight};
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
