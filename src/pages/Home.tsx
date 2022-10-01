@@ -25,7 +25,7 @@ const Home = () => {
     const handleInputValue = debounce(e => setInputValue(e.target.value), 1000)
 
     return(
-        <div>
+        <>
             <h1>Home!</h1>
             <p>La la la la</p>
             <form>
@@ -39,7 +39,7 @@ const Home = () => {
             {todos.map((todo) => {
                 return <p>{todo.title}</p>
             })}
-        </div>
+        </>
     )
 }
 

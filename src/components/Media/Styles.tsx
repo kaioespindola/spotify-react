@@ -5,10 +5,12 @@ import Breakpoints from "../../theme/variables/Breakpoints";
 export const MediaContainer = styled.div`
 
     @media (min-width: ${Breakpoints.md}) {
-        display: flex;
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        width: 100%;
+        height: 90px;
         align-items: center;
         justify-content: space-between;
-        height: 90px;
         background-color: ${Colors.secondaryDark};
         padding: 0 16px 0 16px;
     }

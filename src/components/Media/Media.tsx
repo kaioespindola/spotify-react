@@ -1,11 +1,17 @@
-import { MediaContainer } from './Styles';
+import {
+    MediaContainer
+} from './Styles';
+
+import CurrentSong from './CurrentSong/CurrentSong';
+import Player from './Player/Player';
+import Mixer from './Mixer/Mixer';
 
 const Media = () => {
     return(
         <MediaContainer>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+            <CurrentSong />
+            <Player />
+            <Mixer />
         </MediaContainer>
     )
 }
