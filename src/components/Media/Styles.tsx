@@ -11,7 +11,7 @@ export const MediaContainer = styled.div`
         height: 90px;
         align-items: center;
         justify-content: space-between;
-        background-color: ${Colors.secondaryDark};
+        background-color: ${Colors.black};
         padding: 0 16px 0 16px;
     }
 `

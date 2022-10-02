@@ -5,6 +5,7 @@ import Home from './pages/Home';
 
 // Components
 import { Container, Content } from './theme/styles/Containers';
+import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import Media from './components/Media/Media';
 
@@ -14,6 +15,7 @@ import { PlayingContextProvider } from './context/playing-context';
 const App = () => {
     return (
         <>
+            <Header/>
             <Container>
                 <Sidebar />
                 <Content>

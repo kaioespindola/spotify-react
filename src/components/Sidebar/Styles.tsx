@@ -8,11 +8,12 @@ export const SidebarContainer = styled.div`
         display: flex;
         flex-direction: column;
         width: auto;
-        height: calc(100vh - 90px);
+        height: calc(100vh - 160px);
         position: -webkit-sticky;
         position: sticky;
         top: 0;
-        background-color: ${Colors.black};
+        background-color: ${Colors.primaryDark};
+        border-radius: 10px;
 
         hr {
             margin: 0 auto;

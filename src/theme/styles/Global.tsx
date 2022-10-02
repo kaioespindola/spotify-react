@@ -17,11 +17,12 @@ export default createGlobalStyle`
     }
 
     body {
-        background-color: #121212;
+        background-color: ${Colors.black};
         font-family: 'Montserrat', sans-serif;
         color: ${Colors.primaryLight};
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        padding: 10px;
     }
 
     *::-webkit-scrollbar {
